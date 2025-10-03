@@ -8,5 +8,4 @@ type StockPrice struct {
 	Timestamp   time.Time `json:"timestamp" gorm:"type:timestamp"`
 }
 
-// ...existing code...
-// Add functions for price fetching and caching
+
