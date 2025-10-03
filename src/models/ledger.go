@@ -16,4 +16,4 @@ type LedgerEntry struct {
 	Timestamp   time.Time `json:"timestamp" gorm:"type:timestamp"`
 }
 
-// Add functions for ledger operations
+
