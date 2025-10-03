@@ -1,0 +1,80 @@
+{
+  "info": {
+    "name": "Stocky Reward System API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST /reward",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"<uuid>\",\n  \"stockSymbol\": \"RELIANCE\",\n  \"quantity\": 10.5,\n  \"timestamp\": \"2025-10-03T14:00:00Z\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/reward",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["reward"]
+        }
+      }
+    },
+    {
+      "name": "GET /today-stocks/{userId}",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/today-stocks/<userId>",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["today-stocks", "<userId>"]
+        }
+      }
+    },
+    {
+      "name": "GET /historical-inr/{userId}",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/historical-inr/<userId>",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["historical-inr", "<userId>"]
+        }
+      }
+    },
+    {
+      "name": "GET /stats/{userId}",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/stats/<userId>",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["stats", "<userId>"]
+        }
+      }
+    },
+    {
+      "name": "GET /portfolio/{userId}",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/portfolio/<userId>",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["portfolio", "<userId>"]
+        }
+      }
+    }
+  ]
+}

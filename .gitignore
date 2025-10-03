@@ -1,0 +1,24 @@
+# Go build and cache files
+/bin/
+/pkg/
+*.exe
+*.out
+*.test
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Do NOT ignore .env or db_schema.sql
+!.env
+!db_schema.sql
